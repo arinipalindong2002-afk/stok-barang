@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PT Prima Sarana Gemilang</title>
+
+    <meta http-equiv="refresh" content="2;url=login.php">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #001b8e, #0066ff);
+        }
+
+        .loading-box {
+            width: 90%;
+            max-width: 420px;
+            background: white;
+            padding: 40px 25px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+        }
+
+        .logo {
+            width: 150px;
+            max-width: 70%;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #0033aa;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            font-size: 15px;
+            margin-bottom: 25px;
+        }
+
+        .loader {
+            width: 45px;
+            height: 45px;
+            border: 5px solid #ddd;
+            border-top: 5px solid #0044cc;
+            border-radius: 50%;
+            animation: putar 1s linear infinite;
+            margin: auto;
+        }
+
+        @keyframes putar {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .login-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #0044cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .login-btn:hover {
+            background: #002b88;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="loading-box">
+
+        <!-- Jika logo.jpg tersedia di folder yang sama -->
+        <img src="logo.jpg" class="logo" alt="Logo">
+
+        <h1>PT Prima Sarana Gemilang</h1>
+
+        <p>
+            Sistem Informasi Pengelolaan Stok Barang
+        </p>
+
+        <div class="loader"></div>
+
+        <a href="login.php" class="login-btn">
+            Masuk ke Sistem
+        </a>
+
+    </div>
+
+</body>
+</html>
